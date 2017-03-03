@@ -3,8 +3,8 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AngularJS App 1 | By Akbar Hirani</title>
-  <link rel="stylesheet" href="/public/css/style.css">
-  <link rel="stylesheet" href="../public/css/style.css">
+  <link rel="stylesheet" href="/resources/css/style.css">
+  <link rel="stylesheet" href="../resources/css/style.css">
 </head>
 <body style="min-height: 2000px;">
 	<header>
@@ -34,10 +34,10 @@
   </div>  
 
   <!-- Scripts will run after html has been created -->
-  <script src="public/js/script.js"></script>
-  <script src="/public/libs/angular/angular.min.js"></script>
-  <script src="/public/libs/angular-animate/angular-animate.min.js"></script>
-  <script src="/public/libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/resources/js/script.js"></script>
+  <script src="/resources/libs/angular/angular.min.js"></script>
+  <script src="/resources/libs/angular-animate/angular-animate.min.js"></script>
+  <script src="/resources/libs/angular-ui-router/release/angular-ui-router.min.js"></script>
 
 </body>
 </html>
