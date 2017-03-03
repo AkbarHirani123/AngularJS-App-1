@@ -25,12 +25,7 @@
 	</header>
 
 	<div class="content">
-    <div class="page-header center">
-      <h1>Simple 2-way binding</h1>
-      <input type="text" name="name" ng-model="name">
-      You typed: 
-      <div class="ng-cloak">{{name}}</div>
-    </div>
+    <div ui-view></div>
   </div>  
 
   <!-- Scripts will run after html has been created -->
