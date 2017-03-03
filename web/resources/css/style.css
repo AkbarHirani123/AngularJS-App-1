@@ -157,12 +157,10 @@ ul.navbar li a:after {
 ul.navbar li a:hover:before {
   opacity: 1;
   transform: translateY(5px);
-  cursor: pointer;
 }
 ul.navbar li a:hover:after {
   opacity: 1;
   transform: translateY(-5px);
-  cursor: pointer;
 }
 /* Top and Bottom borders go out END*/
 
@@ -190,7 +188,6 @@ div.navbar-brand a:after {
 div.navbar-brand a:hover:before, div.navbar-brand a:hover:after {
   opacity: 1;
   width: 100%;
-  cursor: pointer;
 }
 /* Border X get width END */
 
