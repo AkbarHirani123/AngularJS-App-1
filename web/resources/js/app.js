@@ -7,22 +7,23 @@ function myFunction() {
     }
 }
 
+// app.js
 var myApp = angular.module('myApp', ['ui.router', 'ngAnimate']);
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
-
-	$urlRoutProvider.otherwise('/');
-
-	$stateProvider
-        
-    .state('home', {
-      url: '/',
-      templateUrl: '/pages/home.html'
-    })
     
-    .state('about', {
-      url: '/about',
-      templateUrl: '/pages/about.html'
-    });
-
+    $urlRouterProvider.otherwise('/');
+    
+    $stateProvider
+        
+        .state('home', {
+            url: '/',
+            templateUrl: 'pages/home.html'
+        })
+        
+        .state('about', {
+            url: '/about',
+            templateUrl: 'pages/about.html'
+        });
+        
 });

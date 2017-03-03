@@ -25,7 +25,7 @@
 	</header>
 
 	<div class="content">
-    <div ui-view></div>
+    <div ui-view ng-cloak></div>
   </div>  
 
   <!-- Scripts will run after html has been created -->
