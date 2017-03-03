@@ -1,0 +1,17 @@
+{
+  "name": "AngularJS1",
+  "homepage": "https://github.com/AkbarHirani123/AngularJS-App-1",
+  "authors": [
+    "Akbar Hirani <akbar.hirani123@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

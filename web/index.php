@@ -1,10 +1,9 @@
 <!DOCTYPE>
-<html>
+<html ng-app>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AngularJS App 1 | By Akbar Hirani</title>
-<link rel="stylesheet" href="css/style.css">
-<script src="js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AngularJS App 1 | By Akbar Hirani</title>
+  <link rel="stylesheet" href="/public/css/style.css" alt="../public/css/style.css">
 </head>
 <body style="min-height: 2000px;">
 	<header>
@@ -23,6 +22,21 @@
 			</ul>
 		</div>
 	</header>
-	<div class="content">HELLO WORLD!</div>
+
+	<div class="content">
+    <div class="page-header center">
+      <h1>Simple 2-way binding</h1>
+      <input type="text" name="name" ng-model="name">
+      <br/><br/>
+      <div class="ng-cloak">{{name}}</div>
+    </div>
+  </div>  
+
+  <!-- Scripts will run after html has been created -->
+  <script src="public/js/script.js" alt="../public/js/script.js"></script>
+  <script src="/public/libs/angular/angular.min.js" alt="../public/libs/angular/angular.min.js"></script>
+  <script src="/public/libs/angular-animate/angular-animate.min.js" alt="../public/libs/angular-animate/angular-animate.min.js"></script>
+  <script src="/public/libs/angular-ui-router/release/angular-ui-router.min.js" alt="../public/libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+
 </body>
 </html>
