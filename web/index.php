@@ -2,6 +2,7 @@
 <html ng-app>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>AngularJS App 1 | By Akbar Hirani</title>
   <link rel="stylesheet" href="/resources/css/style.css">
 </head>
@@ -27,13 +28,13 @@
     <div class="page-header center">
       <h1>Simple 2-way binding</h1>
       <input type="text" name="name" ng-model="name">
-      <br/><br/>
+      You typed: 
       <div class="ng-cloak">{{name}}</div>
     </div>
   </div>  
 
   <!-- Scripts will run after html has been created -->
-  <script src="/resources/js/script.js"></script>
+  <script src="/resources/js/app.js"></script>
   <script src="/resources/libs/angular/angular.min.js"></script>
   <script src="/resources/libs/angular-animate/angular-animate.min.js"></script>
   <script src="/resources/libs/angular-ui-router/release/angular-ui-router.min.js"></script>
