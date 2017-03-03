@@ -157,37 +157,40 @@ ul.navbar li a:after {
 ul.navbar li a:hover:before {
   opacity: 1;
   transform: translateY(5px);
+  cursor: pointer;
 }
 ul.navbar li a:hover:after {
   opacity: 1;
   transform: translateY(-5px);
+  cursor: pointer;
 }
 /* Top and Bottom borders go out END*/
 
 /* Border X get width  */
 div.navbar-brand a:before, div.navbar-brand a:after {
-    position: absolute;
-    opacity: 0;
-    width: 0%;
-    height: 2px;
-    content: '';
-    background: #FFF;
-    transition: all 0.3s;
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: '';
+  background: #FFF;
+  transition: all 0.3s;
 }
 
 div.navbar-brand a:before {
-    left: 0px;
-    top: 0px;
+  left: 0px;
+  top: 0px;
 }
 
 div.navbar-brand a:after {
-    right: 0px;
-    bottom: 0px;
+  right: 0px;
+  bottom: 0px;
 }
 
 div.navbar-brand a:hover:before, div.navbar-brand a:hover:after {
-    opacity: 1;
-    width: 100%;
+  opacity: 1;
+  width: 100%;
+  cursor: pointer;
 }
 /* Border X get width END */
 

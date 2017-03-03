@@ -4,7 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AngularJS App 1 | By Akbar Hirani</title>
   <link rel="stylesheet" href="/resources/css/style.css">
-  <link rel="stylesheet" href="../resources/css/style.css">
 </head>
 <body style="min-height: 2000px;">
 	<header>
