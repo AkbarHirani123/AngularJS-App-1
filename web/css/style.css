@@ -17,138 +17,181 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 20px;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 16px;
-	background-color: #efefef;
+  line-height: 20px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /**** Start of CSS Here ****/
 
-header.navbar {
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-		width: 100%;
-    overflow: auto;
-    z-index: 1;
+body {margin:0;}
+
+div.navbar { 
+  padding: 10px 30px; 
+  margin: 10px 30px; 
+  background-color: #111; 
+}
+header { position: fixed; width: 100%; z-index: 10; }
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  padding-left: 50px;
 }
 
-a.navbar-brand {
-	font-size: 20px;
-}
+ul.navbar li {float: left; position: relative;}
 
-a.navbar-brand, ul.navbar li a {
-	float: left;
-  display: block;
-  color: #999;
+div.navbar-brand li a, ul.navbar li a {
+  display: inline-block;
+  color: #aaa;
   text-align: center;
-  padding: 18px 20px;
+  padding: 14px 16px;
   text-decoration: none;
-  transition: all .5s ease;
+  transition: 0.3s;
+  font-size: 17px;
 }
 
-a.navbar-brand:hover, ul.navbar li a:hover {
-	background-color: #ddd;
-	color: #fff;
-	cursor: pointer;
+ul.navbar li.icon {display: none;}
+
+div.navbar-brand { float: left; }
+div.navbar-brand li { 
+  list-style: none; 
+  float: left; 
+  position: relative;
+}
+div.navbar-brand li a { 
+  font-size: 20px;
+  color: #ddd;
 }
 
-.active {
-  background-color: #ddd;
-  color: #fff;
+/* Top and Bottom borders go out */
+ul.navbar li a:before, ul.navbar li a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
 }
+
+ul.navbar li a:before {
+  top: 0px;
+  transform: translateY(-10px);
+}
+
+ul.navbar li a:after {
+  bottom: 0px;
+  transform: translateY(10px);
+}
+
+ul.navbar li a:hover:before {
+  opacity: 1;
+  transform: translateY(5px);
+}
+ul.navbar li a:hover:after {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+/* Top and Bottom borders go out END*/
+
+/* Border X get width  */
+div.navbar-brand a:before, div.navbar-brand a:after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.navbar-brand a:before {
+    left: 0px;
+    top: 0px;
+}
+
+div.navbar-brand a:after {
+    right: 0px;
+    bottom: 0px;
+}
+
+div.navbar-brand a:hover:before, div.navbar-brand a:hover:after {
+    opacity: 1;
+    width: 100%;
+}
+/* Border X get width END */
 
 .content {
-	position: absolute;
-	top: 66px;
-	padding-left: 75px;
-	padding-right: 75px;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
-@media screen and (min-width: 600px){
-	ul.navbar li.icon { display: none; }
-
-	div.navbar {
-		padding-left: 50px;
-		padding-right: 50px;
-	}
-}
-
-@media screen and (max-width: 600px){
-	a.navbar-brand, ul.navbar li a { float: none; background-color: #ccc;}
-
+@media screen and (max-width:680px) {
+  ul.navbar { padding-left: 0px; }
+  ul.navbar.responsive { padding-left: 1px; }
   ul.navbar li:not(:last-child) {
-  	transform: translateX(-100%);
-  	transition: all .5s ease;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: all .5s ease;
   }
-
-  ul.navbar li.icon {
+  ul.navbar li.icon, ul.navbar.responsive li.icon {
+    float: right;
     position: absolute;
-    right: 0;
-    top: 0;
-  	transition: all .5s ease;
+    display: inline-block;
+    right: 35;
+    top: 20;
   }
-
-  div.navbar {
-		padding-left: 0px;
-		padding-right: 0px;
-	}
-
-  ul.navbar.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: #ddd;
-  	color: #fff;
-  }
-
+  ul.navbar.responsive:not(:last-child) {position: relative;}
   ul.navbar.responsive li:not(:last-child) {
-  	transition: all .5s ease;
-  	transform: translateX(0%);
+    transition: all .5s ease;
+    transform: translateX(0%);
     float: none;
     display: block;
   }
-
-  ul.navbar.responsive li a { display: block;  }
+  ul.navbar.responsive li a:not(:last-child) {
+    display: block;
+    text-align: left;
+  }
+  div.navbar-brand { width: 100%; }
+  div.navbar-brand li { width:100%; text-align: center; }
   .content {
-		top: 66px;
-		padding-left: 5px;
-		padding-right: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
-
-
-
-
-
 
 

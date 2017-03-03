@@ -7,18 +7,19 @@
 <script src="js/script.js"></script>
 </head>
 <body style="min-height: 2000px;">
-	<header class="navbar">
+	<header>
 		<div class="navbar">
-			<div class="navbar-header">
-				<a class="navbar-brand">Akbar Hirani</a>
+			<div class="navbar-brand">
+				<li><a href="/">Akbar Hirani</a></li>
 			</div>
-			<ul class="navbar" id="myTopnav">
-				<li><a href="/web">Home</a></li>
-				<li><a href="/">Back To Akbar Hirani</a></li>
-				<li><a href="/">About</a></li>
-				<li class="icon">
-				  <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-				</li>
+			<ul class="navbar" id="mynavbar">
+			  <li><a class="active" href="#home">Home</a></li>
+			  <li><a href="#news">News</a></li>
+			  <li><a href="#contact">Contact</a></li>
+			  <li><a href="#about">About</a></li>
+			  <li class="icon">
+			    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+			  </li>
 			</ul>
 		</div>
 	</header>
