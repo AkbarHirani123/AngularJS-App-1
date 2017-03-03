@@ -10,7 +10,7 @@
 	<header>
 		<div class="navbar">
 			<div class="navbar-brand">
-				<li><a ui-sref="/">Akbar Hirani</a></li>
+				<li><a href="#/">Akbar Hirani</a></li>
 			</div>
 			<ul class="navbar" id="mynavbar">
 			  <li><a class="active" ui-sref="home">Home</a></li>
