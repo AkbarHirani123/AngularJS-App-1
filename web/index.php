@@ -29,10 +29,10 @@
   </div>  
 
   <!-- Scripts will run after html has been created -->
-  <script src="/resources/js/app.js"></script>
   <script src="/resources/libs/angular/angular.min.js"></script>
   <script src="/resources/libs/angular-animate/angular-animate.min.js"></script>
   <script src="/resources/libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/resources/js/app.js"></script>
 
 </body>
 </html>
