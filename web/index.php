@@ -8,15 +8,15 @@
 </head>
 <body style="min-height: 2000px;" ng-app="myApp">
 	<header>
-		<div class="navbar">
+		<div class="navbar" ng-controller="navController">
 			<div class="navbar-brand">
 				<li><a href="#/">Akbar Hirani</a></li>
 			</div>
 			<ul class="navbar" id="mynavbar">
-			  <li><a class="active" ui-sref="home">Home</a></li>
-			  <li><a href="#news">News</a></li>
-			  <li><a href="#contact">Contact</a></li>
-			  <li><a ui-sref="about">About</a></li>
+			  <li ng-class="{active: isActive('/home')}"><a  ui-sref="home">Home</a></li>
+			  <li ng-class="{active: isActive('/news')}"><a href="news">News</a></li>
+			  <li ng-class="{active: isActive('/contact')}"><a href="contact">Contact</a></li>
+			  <li ng-class="{active: isActive('/about')}"><a ui-sref="about">About</a></li>
 			  <li class="icon">
 			    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
 			  </li>
@@ -33,6 +33,7 @@
   <script src="/resources/libs/angular-animate/angular-animate.min.js"></script>
   <script src="/resources/libs/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script src="/resources/js/app.js"></script>
+  <script src="/resources/js/navController.js"></script>
 
 </body>
 </html>

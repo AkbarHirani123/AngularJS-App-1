@@ -126,7 +126,14 @@ div.navbar-brand li {
   list-style: none; 
   float: left; 
   position: relative;
+  border-bottom: solid 2px transparent;
+  transition: all .4s ease-in-out; 
 }
+
+div.navbar-brand li.active { 
+  border-bottom: solid 2px #fff;
+}
+
 div.navbar-brand li a { 
   font-size: 20px;
   color: #ddd;
@@ -248,7 +255,7 @@ ul.fancy-tab:after {
   content: "";
   clear: both;
   display: block;
-  height: 50vh;
+  height: 52vh;
   max-height: 70vh;
 }
 
@@ -306,7 +313,7 @@ li.tab-li > input:checked ~ .tab-content {
   display: block;
 }
 
-
+/**** End of Tab CSS Here ****/
 
 
 

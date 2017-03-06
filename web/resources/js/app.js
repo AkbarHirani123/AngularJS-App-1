@@ -18,7 +18,8 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         
       .state('home', {
         url: '/',
-        templateUrl: 'pages/home.html'
+        templateUrl: 'pages/home.html',
+        controller: 'infoListController as infoList'
       })
       
       .state('about', {
@@ -28,8 +29,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 
       .state('home.work', {
         url: '/work',
-        templateUrl: 'pages/home-work.html',
-        controller: 'infoListController as infoList'
+        templateUrl: 'pages/home-work.html'
       });
 });
 
