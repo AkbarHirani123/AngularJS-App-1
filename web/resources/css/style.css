@@ -116,8 +116,6 @@ ul.navbar li {
 }
 
 ul.navbar li.active {
-  float: left; 
-  position: relative;
   border-left: solid 2px #fff;
   border-right: solid 2px #fff;
 }
