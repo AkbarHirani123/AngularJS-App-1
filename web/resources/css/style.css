@@ -266,10 +266,11 @@ li.tab-li > input {
 }
 
 .tab-li .tab-content {
-  transform: translateX(-300%);
-  transition: all 1s linear;
-/*  display: none;
-*/  position: absolute;
+/*  transform: translateX(-300%);
+*/  
+  transition: all .7s ease;
+  display: none;
+  position: absolute;
   left: 0;
   padding: 25px;
   height: 40vh;
@@ -304,10 +305,11 @@ li.tab-li > input:checked + label {
   transition: all .7s ease;
 }
 
-li.tab-li > input:checked ~ .tab-content {
+li.tab-li > input:checked ~ .tab-content {/*
   transform: translateX(0%);
-  transition: all 1.4s ease;
+  transition: all 1.4s ease;*/
   display: block;
+  transition: all .7s ease;
 }
 
 /**** End of Tab CSS Here ****/
