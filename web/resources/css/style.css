@@ -244,6 +244,10 @@ div.navbar-brand a:hover:before, div.navbar-brand a:hover:after {
   box-shadow: 0 0 6px rgba(0,0,0,.4);
 }
 
+.fancy-tab-header-input input {
+  display: none;
+}
+
 .fancy-tab-header {
   background: #aaaaaa;
   width: 100%;
@@ -257,10 +261,6 @@ div.navbar-brand a:hover:before, div.navbar-brand a:hover:after {
   background: #585858;
   position: absolute;
   transition: .5s;
-}
-
-.fancy-tab-header-input input {
-  display: none;
 }
 
 div.tabs {
@@ -293,17 +293,6 @@ div.tabs:before {
   transform: scale(0);
   transform-origin: center right;
   transition-delay: .1s;
-}
-.fancy-tab-content:before {
-  color: rgba(0,0,0,.2);
-  font-size: 4rem;
-  font-weight: 100;
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-}
-.fancy-tab-content.active {
-  display: all;
 }
 
 #about:checked ~ nav [for='about'],
