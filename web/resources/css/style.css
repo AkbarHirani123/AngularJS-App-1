@@ -295,27 +295,27 @@ div.tabs:before {
   transition-delay: .1s;
 }
 
-#about:checked ~ nav [for='about'],
-#work:checked ~ nav [for='work'],
-#skills:checked ~ nav [for='skills'],
-#projects:checked ~ nav [for='projects'] {
+#about:checked ~ .fancy-tab-heabder [for='about'],
+#work:checked ~ .fancy-tab-heabder [for='work'],
+#skills:checked ~ .fancy-tab-heabder [for='skills'],
+#projects:checked ~ .fancy-tab-heabder [for='projects'] {
   color: #aaa;
   font-weight: 600;
 }
-#work:checked ~ nav [for='work'] {}
-#about:checked ~ nav [for='about'] {}
+#work:checked ~ .fancy-tab-heabder [for='work'] {}
+#about:checked ~ .fancy-tab-heabder [for='about'] {}
 
-#about:checked ~ nav:after {
+#about:checked ~ .fancy-tab-heabder:after {
   left: 0;
 }
-#work:checked ~ nav:after {
+#work:checked ~ .fancy-tab-heabder:after {
   left:25%;
   border-top: 0 none;
 }
-#skills:checked ~ nav:after {
+#skills:checked ~ .fancy-tab-heabder:after {
   left: 50%;
 }
-#projects:checked ~ nav:after {
+#projects:checked ~ .fancy-tab-heabder:after {
   left: 75%;
 }
 
