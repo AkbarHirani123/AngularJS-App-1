@@ -262,11 +262,11 @@ li.tab-li > input {
 }
 
 .tab-li .tab-content {
-  transform: translateX(-100%);
-  transition: all 1.4s ease;
+  transform: translateX(-300%);
+  transition: all 1s linear;
 /*  display: none;
 */  position: absolute;
-  /*left: 0;*/
+  left: 0;
   padding: 25px;
   height: 35vh;
   max-height: 70vh;
@@ -304,7 +304,7 @@ li.tab-li > input:checked + label {
 li.tab-li > input:checked ~ .tab-content {
   transform: translateX(0%);
   transition: all 1.4s ease;
-  /*display: block;*/
+  display: block;
 }
 
 
