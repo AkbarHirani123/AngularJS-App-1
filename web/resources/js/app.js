@@ -31,7 +31,6 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         templateUrl: 'pages/home-work.html',
         controller: 'infoListController as infoList'
       });
-        
 });
 
 myApp.controller('infoListController', function() {

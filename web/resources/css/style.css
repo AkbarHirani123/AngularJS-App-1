@@ -296,13 +296,13 @@ div.tabs:before {
 }
 
 #about:checked ~ nav [for='about'],
-#work:checked ~ nav [for='settings'],
+#work:checked ~ nav [for='work'],
 #skills:checked ~ nav [for='skills'],
 #projects:checked ~ nav [for='projects'] {
   color: #aaa;
   font-weight: 600;
 }
-#work:checked ~ nav [for='settings'] {}
+#work:checked ~ nav [for='work'] {}
 #about:checked ~ nav [for='about'] {}
 
 #about:checked ~ nav:after {
@@ -320,7 +320,7 @@ div.tabs:before {
 }
 
 #about:checked ~ .about,
-#settings:checked ~ .work,
+#work:checked ~ .work,
 #skills:checked ~ .skills,
 #projects:checked ~ .projects {
   display: block;
