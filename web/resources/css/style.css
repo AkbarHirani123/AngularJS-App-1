@@ -108,6 +108,9 @@ ul.navbar {
 }
 
 ul.navbar li {float: left; position: relative;}
+ul.navbar li.active a {
+  color: #fff;
+}
 
 div.navbar-brand li a, ul.navbar li a {
   display: inline-block;
