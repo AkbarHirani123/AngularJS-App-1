@@ -297,34 +297,34 @@ div.tabs:before {
   transition-delay: .1s;
 }
 
-#about:checked ~ div.fancy-tab-header [for='about'],
-#work:checked ~ div.fancy-tab-header [for='work'],
-#skills:checked ~ div.fancy-tab-header [for='skills'],
-#projects:checked ~ div.fancy-tab-header [for='projects'] {
+div.fancy-tab-header-input #about:checked ~ div.fancy-tab-header [for='about'],
+div.fancy-tab-header-input #work:checked ~ div.fancy-tab-header [for='work'],
+div.fancy-tab-header-input #skills:checked ~ div.fancy-tab-header [for='skills'],
+div.fancy-tab-header-input #projects:checked ~ div.fancy-tab-header [for='projects'] {
   color: #aaa;
   font-weight: 600;
 }
-#work:checked ~ div.fancy-tab-header [for='work'] {}
-#about:checked ~ div.fancy-tab-header [for='about'] {}
+div.fancy-tab-header-input #work:checked ~ div.fancy-tab-header [for='work'] {}
+div.fancy-tab-header-input #about:checked ~ div.fancy-tab-header [for='about'] {}
 
-#about:checked ~ div.fancy-tab-header:after {
+div.fancy-tab-header-input #about:checked ~ div.fancy-tab-header:after {
   left: 0;
 }
-#work:checked ~ div.fancy-tab-header:after {
+div.fancy-tab-header-input #work:checked ~ div.fancy-tab-header:after {
   left:25%;
   border-top: 0 none;
 }
-#skills:checked ~ div.fancy-tab-header:after {
+div.fancy-tab-header-input #skills:checked ~ div.fancy-tab-header:after {
   left: 50%;
 }
-#projects:checked ~ div.fancy-tab-header:after {
+div.fancy-tab-header-input #projects:checked ~ div.fancy-tab-header:after {
   left: 75%;
 }
 
-#about:checked ~ .about,
-#work:checked ~ .work,
-#skills:checked ~ .skills,
-#projects:checked ~ .projects {
+div.fancy-tab-header-input #about:checked ~ .about,
+div.fancy-tab-header-input #work:checked ~ .work,
+div.fancy-tab-header-input #skills:checked ~ .skills,
+div.fancy-tab-header-input #projects:checked ~ .projects {
   display: block;
   transform: scale(1);
   transition-delay: .5s; 
