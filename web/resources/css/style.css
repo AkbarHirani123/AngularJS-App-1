@@ -107,7 +107,18 @@ ul.navbar {
   padding-left: 50px;
 }
 
-ul.navbar li {float: left; position: relative;}
+ul.navbar li {
+  float: left; 
+  position: relative;
+  border-bottom: solid 2px transparent;
+  transition: all .4s ease-in-out; 
+}
+
+ul.navbar li.active {
+  float: left; 
+  position: relative;
+  border-bottom: solid 2px #fff;
+}
 
 div.navbar-brand li a, ul.navbar li a {
   display: inline-block;
@@ -126,12 +137,6 @@ div.navbar-brand li {
   list-style: none; 
   float: left; 
   position: relative;
-  border-bottom: solid 2px transparent;
-  transition: all .4s ease-in-out; 
-}
-
-div.navbar-brand li.active { 
-  border-bottom: solid 2px #fff;
 }
 
 div.navbar-brand li a { 
