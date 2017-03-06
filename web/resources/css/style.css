@@ -110,14 +110,16 @@ ul.navbar {
 ul.navbar li {
   float: left; 
   position: relative;
-  border-bottom: solid 2px transparent;
+  border-left: solid 2px transparent;
+  border-right: solid 2px transparent;
   transition: all .4s ease-in-out; 
 }
 
 ul.navbar li.active {
   float: left; 
   position: relative;
-  border-bottom: solid 2px #fff;
+  border-left: solid 2px #fff;
+  border-right: solid 2px #fff;
 }
 
 div.navbar-brand li a, ul.navbar li a {
@@ -168,11 +170,11 @@ ul.navbar li a:after {
 
 ul.navbar li a:hover:before {
   opacity: 1;
-  transform: translateY(5px);
+  transform: translateY(0px);
 }
 ul.navbar li a:hover:after {
   opacity: 1;
-  transform: translateY(-5px);
+  transform: translateY(-0px);
 }
 /* Top and Bottom borders go out END*/
 
