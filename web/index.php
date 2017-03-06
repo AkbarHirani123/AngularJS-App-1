@@ -13,7 +13,7 @@
 				<li><a href="#/">Akbar Hirani</a></li>
 			</div>
 			<ul class="navbar" id="mynavbar">
-			  <li ng-class="{active: isActive('/home')}"><a  ui-sref="home">Home</a></li>
+			  <li ng-class="{active: isActive('/')}"><a  ui-sref="home">Home</a></li>
 			  <li ng-class="{active: isActive('/news')}"><a href="news">News</a></li>
 			  <li ng-class="{active: isActive('/contact')}"><a href="contact">Contact</a></li>
 			  <li ng-class="{active: isActive('/about')}"><a ui-sref="about">About</a></li>
