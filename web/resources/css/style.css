@@ -107,18 +107,7 @@ ul.navbar {
   padding-left: 50px;
 }
 
-ul.navbar li {
-  float: left; 
-  position: relative;
-  border-left: solid 2px transparent;
-  border-right: solid 2px transparent;
-  transition: all .4s ease-in-out; 
-}
-
-ul.navbar li.active {
-  border-left: solid 2px #fff;
-  border-right: solid 2px #fff;
-}
+ul.navbar li {float: left; position: relative;}
 
 div.navbar-brand li a, ul.navbar li a {
   display: inline-block;
@@ -137,8 +126,8 @@ div.navbar-brand li {
   list-style: none; 
   float: left; 
   position: relative;
+  bor
 }
-
 div.navbar-brand li a { 
   font-size: 20px;
   color: #ddd;
@@ -168,11 +157,11 @@ ul.navbar li a:after {
 
 ul.navbar li a:hover:before {
   opacity: 1;
-  transform: translateY(0px);
+  transform: translateY(5px);
 }
 ul.navbar li a:hover:after {
   opacity: 1;
-  transform: translateY(-0px);
+  transform: translateY(-5px);
 }
 /* Top and Bottom borders go out END*/
 
