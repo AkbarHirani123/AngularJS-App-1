@@ -1,9 +1,9 @@
 function myFunction() {
     var x = document.getElementById("mynavbar");
     if (x.className === "navbar") {
-        x.className += " responsive";
+      x.className += " responsive";
     } else {
-        x.className = "navbar";
+      x.className = "navbar";
     }
 }
 
@@ -16,14 +16,24 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     
     $stateProvider
         
-        .state('home', {
-            url: '/',
-            templateUrl: 'pages/home.html'
-        })
+      .state('home', {
+        url: '/',
+        templateUrl: 'pages/home.html'
+      })
+      
+      .state('about', {
+        url: '/about',
+        templateUrl: 'pages/about.html'
+      })
+
+      .state('home.work', {
+        url: '/work',
+        templateUrl: 'pages/home-work.html',
+        controller: 'infoListController as infoList'
+      });
         
-        .state('about', {
-            url: '/about',
-            templateUrl: 'pages/about.html'
-        });
-        
+});
+
+myApp.controller('infoListController', function() {
+
 });
