@@ -126,17 +126,15 @@ label:before {
   line-height: 5rem;
   z-index: 2;
 }
-#skills:checked ~ nav [for='skills'],
+#about:checked ~ nav [for='about'],
 #work:checked ~ nav [for='work'],
 #projects:checked ~ nav [for='projects'],
 #skills:checked ~ nav [for='skills'] {
   color: #1E6743;
   font-weight: 600;
 }
-#work:checked ~ nav [for='work'] {}
-#skills:checked ~ nav [for='skills'] {}
 
-#skills:checked ~ nav:after {
+#about:checked ~ nav:after {
   left: 0;
 }
 #work:checked ~ nav:after {
@@ -150,7 +148,7 @@ label:before {
   left: 75%;
 }
 
-#skills:checked ~ .uno,
+#about:checked ~ .about,
 #work:checked ~ .work,
 #projects:checked ~ .projects,
 #skills:checked ~ .skills {
@@ -163,19 +161,19 @@ a:hover {color: rgba(0,0,0,.2)}
 </style>
 
 <section>
-<input type="radio" id="skills" value="1" name="tractor" checked='checked' />    
+<input type="radio" id="about" value="1" name="tractor" checked='checked' />    
 <input type="radio" id="work" value="2" name="tractor" />      
 <input type="radio" id="projects" value="3" name="tractor" />
 <input type="radio" id="skills" value="4" name="tractor" />
   
   <nav>   
-  <label for="skills" class='fontawesome-camera-retro'>skills</label>
+  <label for="about" class='fontawesome-camera-retro'>About</label>
   <label for="work" class='fontawesome-film'>Work</label>
   <label for="projects" class='fontawesome-calendar'>Projects</label>
   <label for="skills" class='fontawesome-list-alt'>Skills</label>
   </nav>
   
-  <article class='uno'>
+  <article class='about'>
     <h2>
       <img alt=''  src='https://lh3.googleusercontent.com/-wy4VbKjl-28/UXVqrCC_cCI/AAAAAAAAGi0/JZZvb9IaLCc/s550-no/K-bg-2.jpg' />
       <img alt=''  src='https://lh3.googleusercontent.com/-wy4VbKjl-28/UXVqrCC_cCI/AAAAAAAAGi0/JZZvb9IaLCc/s550-no/K-bg-2.jpg' />
@@ -183,7 +181,7 @@ a:hover {color: rgba(0,0,0,.2)}
       <span>Spanish Css blog</span></h2>
   </article>
   
-  <article class='work fontawesome-wrench'>
+  <article class='work'>
     Beta
     <p>Where does it come from?</p>
     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
@@ -194,7 +192,7 @@ a:hover {color: rgba(0,0,0,.2)}
     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
   </article>
   
-  <article class='projects fontawesome-file-alt'>
+  <article class='projects'>
     Beta
     <p>Where does it come from?</p>
     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
@@ -205,7 +203,7 @@ a:hover {color: rgba(0,0,0,.2)}
     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
   </article>
   
-  <article class='skills fontawesome-copy'>
+  <article class='skills'>
     Beta
     <p>Where does it come from?</p>
     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
