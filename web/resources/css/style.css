@@ -235,5 +235,74 @@ div.navbar-brand a:hover:before, div.navbar-brand a:hover:after {
 
 /**** Start of Tab CSS Here ****/
 
+ul.fancy-tab {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+ul.fancy-tab:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 50vh;
+  max-height: 70vh;
+}
+
+li.tab-li {
+  float: left;
+}
+
+li.tab-li > input {
+  display: none;
+}
+
+.tab-li .tab-content {/*
+  transform: translateX(-100%);
+  transition: all 1.4s ease;*/
+  display: none;
+  position: absolute;
+  left: 0;
+  padding: 25px;
+  height: 50vh;
+  max-height: 70vh;
+  overflow-x: scroll;
+}
+
+li.tab-li > label {
+  display: inline-block;
+  width: 25%;
+  border: 0 none;
+  height: 50px;
+  line-height: 25px;
+  padding: 10px 10px 0;
+  cursor: pointer;
+  color: #aaa
+  background-color: #fff;
+  transition: all .7s ease;
+}
+
+/**** Tab functionality ****/
+
+li.tab-li > input:checked + label {
+  background-color: #aaa;
+  color: #888;
+  border-bottom: solid 2px;
+  border-color: #888;
+  border-radius: 20px;
+  transition: all .7s ease;
+}
+
+li.tab-li > input:checked ~ .tab-content {/*
+  transform: translateX(0%);
+  transition: all 1.4s ease;*/
+  display: block;
+}
+
+
+
+
+
 
 
