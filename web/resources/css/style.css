@@ -268,10 +268,9 @@ li.tab-li > input {
 */  position: absolute;
   left: 0;
   padding: 25px;
-  height: 35vh;
+  height: 40vh;
   max-height: 70vh;
   overflow-x: scroll;
-  background-color: #eee;
 }
 
 li.tab-li > label {
