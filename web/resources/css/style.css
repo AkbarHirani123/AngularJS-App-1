@@ -253,6 +253,7 @@ div.navbar-brand a:hover:before, div.navbar-brand a:hover:after {
   width: 100%;
   height: 5rem;
   box-shadow: 0 0 6px rgba(0,0,0,.4);
+  position: relative;
 }
 .fancy-tab-header:after {
   content:'';
@@ -271,6 +272,7 @@ div.tabs {
   cursor: pointer;
   transition: .5s;
   z-index: 2;
+  position: relative;
 }
 
 div.tabs:hover {color: #666;}
@@ -295,27 +297,27 @@ div.tabs:before {
   transition-delay: .1s;
 }
 
-#about:checked ~ .fancy-tab-heabder [for='about'],
-#work:checked ~ .fancy-tab-heabder [for='work'],
-#skills:checked ~ .fancy-tab-heabder [for='skills'],
-#projects:checked ~ .fancy-tab-heabder [for='projects'] {
+#about:checked ~ div.fancy-tab-header [for='about'],
+#work:checked ~ div.fancy-tab-header [for='work'],
+#skills:checked ~ div.fancy-tab-header [for='skills'],
+#projects:checked ~ div.fancy-tab-header [for='projects'] {
   color: #aaa;
   font-weight: 600;
 }
-#work:checked ~ .fancy-tab-heabder [for='work'] {}
-#about:checked ~ .fancy-tab-heabder [for='about'] {}
+#work:checked ~ div.fancy-tab-header [for='work'] {}
+#about:checked ~ div.fancy-tab-header [for='about'] {}
 
-#about:checked ~ .fancy-tab-heabder:after {
+#about:checked ~ div.fancy-tab-header:after {
   left: 0;
 }
-#work:checked ~ .fancy-tab-heabder:after {
+#work:checked ~ div.fancy-tab-header:after {
   left:25%;
   border-top: 0 none;
 }
-#skills:checked ~ .fancy-tab-heabder:after {
+#skills:checked ~ div.fancy-tab-header:after {
   left: 50%;
 }
-#projects:checked ~ .fancy-tab-heabder:after {
+#projects:checked ~ div.fancy-tab-header:after {
   left: 75%;
 }
 
