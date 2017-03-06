@@ -252,6 +252,7 @@ ul.fancy-tab:after {
 
 li.tab-li {
   float: left;
+  width: 25%;
 }
 
 li.tab-li > input {
@@ -268,29 +269,31 @@ li.tab-li > input {
   height: 50vh;
   max-height: 70vh;
   overflow-x: scroll;
+  background-color: #eee;
 }
 
 li.tab-li > label {
   display: inline-block;
   width: 25%;
   border: 0 none;
-  height: 50px;
   line-height: 25px;
-  padding: 10px 10px 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
   cursor: pointer;
-  color: #aaa
-  background-color: #fff;
+  color: #888;
+  background-color: #ddd;
   transition: all .7s ease;
+  width: 100%;
+  text-align: center;
 }
 
 /**** Tab functionality ****/
 
 li.tab-li > input:checked + label {
   background-color: #aaa;
-  color: #888;
+  color: #555;
   border-bottom: solid 2px;
   border-color: #888;
-  border-radius: 20px;
   transition: all .7s ease;
 }
 
