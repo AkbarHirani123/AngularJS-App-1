@@ -246,6 +246,7 @@ ul.fancy-tab {
   position: relative;
   background-color: #eee;
   min-height: 60vh;
+  box-shadow: 0 0 6px rgba(0,0,0,0.4);
 }
 
 ul.fancy-tab:after {
@@ -266,10 +267,8 @@ li.tab-li > input {
 }
 
 .tab-li .tab-content {
-/*  transform: translateX(-300%);
-*/  
-  transition: all .7s ease;
-  display: none;
+  opacity: 0;
+  transition: transform 1.4s ease;
   position: absolute;
   left: 0;
   padding: 25px;
@@ -293,6 +292,7 @@ li.tab-li > label {
   text-align: center;
   border-bottom: solid 2px;
   border-color: #ddd;
+  box-shadow: 0 0 6 rgba(0,0,0,.6);
 }
 
 /**** Tab functionality ****/
@@ -305,11 +305,10 @@ li.tab-li > input:checked + label {
   transition: all .7s ease;
 }
 
-li.tab-li > input:checked ~ .tab-content {/*
-  transform: translateX(0%);
-  transition: all 1.4s ease;*/
+li.tab-li > input:checked ~ .tab-content {
+  opacity: 1;
+  transition: opacity 1s;
   display: block;
-  transition: all .7s ease;
 }
 
 /**** End of Tab CSS Here ****/
